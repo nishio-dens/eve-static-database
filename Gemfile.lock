@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    convergence (1.0.5)
+      diff-lcs
+      diffy
+      mysql2
+      thor
+    diff-lcs (1.4.4)
+    diffy (3.4.0)
+    mysql2 (0.5.3)
+    thor (1.1.0)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  convergence
+
+BUNDLED WITH
+   2.2.2
