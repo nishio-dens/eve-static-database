@@ -1,6 +1,19 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (6.1.3.2)
+      activesupport (= 6.1.3.2)
+    activerecord (6.1.3.2)
+      activemodel (= 6.1.3.2)
+      activesupport (= 6.1.3.2)
+    activesupport (6.1.3.2)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    coderay (1.1.3)
+    concurrent-ruby (1.1.8)
     convergence (1.0.5)
       diff-lcs
       diffy
@@ -8,14 +21,27 @@ GEM
       thor
     diff-lcs (1.4.4)
     diffy (3.4.0)
+    i18n (1.8.10)
+      concurrent-ruby (~> 1.0)
+    method_source (1.0.0)
+    minitest (5.14.4)
     mysql2 (0.5.3)
+    pry (0.14.1)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
     thor (1.1.0)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.4.2)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activerecord
   convergence
+  mysql2
+  pry
 
 BUNDLED WITH
    2.2.2
