@@ -1,6 +1,3 @@
-require "active_model"
-require "active_record"
-require "./importer/importer"
-require "./models/models"
+require "./dependencies"
 
 Importer::BlueprintImporter.new.execute
