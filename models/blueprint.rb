@@ -3,6 +3,7 @@ require_relative "blueprint_product"
 require_relative "blueprint_skill"
 
 class Blueprint < ActiveRecord::Base
+  # Constants
   BLUEPRINT_RELATIONS = %i[
     blueprint_copying_materials
     blueprint_copying_skills
@@ -49,6 +50,7 @@ class Blueprint < ActiveRecord::Base
   has_many :blueprint_reaction_products,       -> { where(activity_type: "reaction") }, foreign_key: :id, class_name: "BlueprintProduct"
   has_many :blueprint_reaction_skills,         -> { where(activity_type: "reaction") }, foreign_key: :id, class_name: "BlueprintSkill"
 
+  # Methods
   def set_as_relation_loaded!
     BLUEPRINT_RELATIONS.each { |relation| association(relation).loaded! }
   end

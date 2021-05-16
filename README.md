@@ -84,6 +84,11 @@ Finally, run the following command to import the yaml data into your MySQL datab
 bundle exec ruby importer.rb
 ```
 
+# Supported Data
+
+- Blueprint: 100%
+- typeIDs: traits is not supported.
+
 
 # SDE LICENSE
 
