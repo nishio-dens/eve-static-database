@@ -52,6 +52,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  activesupport
   annotate
   convergence
   json-schema-generator
